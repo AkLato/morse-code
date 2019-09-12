@@ -1,0 +1,126 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #14a5b8;
+  font-family: "Roboto Mono", monospace;
+}
+* {
+  position: relative;
+}
+h1 {
+  color: white;
+  margin-bottom: 2rem;
+}
+textarea:focus::placeholder {
+  color: white;
+}
+#indexBtn {
+  display: flex;
+}
+#encodeEnter,
+#decodeEnter {
+  margin: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 7px;
+  font-size: 1.3rem;
+  background-color: #83b726;
+  border: none;
+  display: block;
+  color: #fff;
+}
+#encodeEnter:hover,
+#decodeEnter:hover {
+  background-color: #067834;
+  cursor: pointer;
+}
+
+/* encode div */
+#encodeDiv,
+#decodeDiv {
+  opacity: 0;
+  display: none;
+}
+#encText,
+#decCode {
+  width: 300px;
+  height: 180px;
+  border: none;
+}
+#encResult,
+#decResult {
+  width: 300px;
+  height: 200px;
+  background-color: white;
+  border: 1px solid;
+  margin-top: 10px;
+  display: none;
+  text-transform: lowercase;
+}
+#encBtn,
+#decBtn {
+  background-color: #83b726;
+  color: white;
+  height: 30px;
+  border: none;
+  display: block;
+}
+
+#encBtn:hover,
+#decBtn:hover {
+  background-color: #067834;
+  cursor: pointer;
+}
+#encBack,
+#decBack {
+  height: 25px;
+  background-color: #ff8200;
+  color: white;
+  border: none;
+}
+
+#encBack:hover,
+#decBack:hover {
+  background-color: #f16d00;
+}
+
+/* encode div */
+#encodeDiv,
+#decodeDiv {
+  width: 100%;
+}
+#encText,
+#decCode {
+  width: 300px;
+  border: none;
+  border-radius: 7px;
+  padding: 0.5rem;
+}
+#encResult,
+#decResult {
+  width: 300px;
+  background-color: white;
+  border: 1px solid gray;
+  margin-top: 10px;
+  display: none;
+  padding: 0.5rem;
+  border-radius: 7px;
+}
+#encBtn,
+#decBtn {
+  background-color: #83b726;
+  width: 316px;
+  height: 30px;
+  border: none;
+  margin-top: 0.25rem;
+  border-radius: 7px;
+}
+#encBack,
+#decBack {
+  width: 316px;
+  height: 30px;
+  border: none;
+  margin-top: 0.5rem;
+  border-radius: 7px;
+}
